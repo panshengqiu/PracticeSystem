@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.edu.bjut</groupId>
-    <artifactId>springboot-project1</artifactId>
+    <artifactId>springboot-web-practice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-project1</name>
     <description>springboot-project1</description>
