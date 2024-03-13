@@ -1,4 +1,4 @@
-package cn.edu.bjut.springbootproject1.entity;
+package cn.edu.bjut.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,9 +11,9 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Dept {
+public class Student {
     private Integer id; //ID
-    private String name; //部门名称
+    private String name; //学生名称
     private LocalDateTime createTime; //创建时间
     private LocalDateTime updateTime; //修改时间
 }
