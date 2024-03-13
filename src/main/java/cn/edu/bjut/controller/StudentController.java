@@ -1,21 +1,19 @@
-package cn.edu.bjut.springbootproject1.controller;
+package cn.edu.bjut.controller;
 
 
-import cn.edu.bjut.springbootproject1.entity.Result;
+import cn.edu.bjut.entity.Result;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
 @Slf4j
 @RestController
-public class DeptController {
+public class StudentController {
 //    private static Logger log = LoggerFactory.getLogger(DeptController.class);
     @RequestMapping("/depts")
     public Result list(){
-        System.out.println("²éÑ¯ËùÓÐ²¿ÃÅÐÅÏ¢");
+        System.out.println("ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢");
         return Result.success();
     }
 }

@@ -1,4 +1,4 @@
-package cn.edu.bjut.springbootproject1.entity;
+package cn.edu.bjut.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

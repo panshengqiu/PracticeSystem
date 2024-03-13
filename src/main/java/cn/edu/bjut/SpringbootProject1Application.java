@@ -1,4 +1,4 @@
-package cn.edu.bjut.springbootproject1;
+package cn.edu.bjut;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

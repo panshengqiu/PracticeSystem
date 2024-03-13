@@ -1,18 +1,18 @@
-package cn.edu.bjut.springbootproject1.service;
+package cn.edu.bjut.service;
 
-import cn.edu.bjut.springbootproject1.entity.Dept;
+import cn.edu.bjut.entity.Student;
 
 import java.util.List;
 
 /**
  * 部门管理
  */
-public interface DeptService {
+public interface StudentService {
     /**
      * 查询全部部门数据
      * @return
      */
-    List<Dept> list();
+    List<Student> list();
 
     /**
      * 删除部门
@@ -22,7 +22,7 @@ public interface DeptService {
 
     /**
      * 新增部门
-     * @param dept
+     * @param student
      */
-    void add(Dept dept);
+    void add(Student student);
 }
