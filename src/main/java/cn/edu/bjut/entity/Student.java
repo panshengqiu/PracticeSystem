@@ -13,7 +13,8 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class Student {
     private Integer id; //ID
-    private String name; //学生名称
+    private String username; //学生名称
+    private String name;
     private LocalDateTime createTime; //创建时间
     private LocalDateTime updateTime; //修改时间
 }
