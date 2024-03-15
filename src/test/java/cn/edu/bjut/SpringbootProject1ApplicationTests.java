@@ -15,6 +15,6 @@ class SpringbootProject1ApplicationTests {
 
     @Test
     void test(){
-        System.out.println("");
+        System.out.println(" ");
     }
 }
