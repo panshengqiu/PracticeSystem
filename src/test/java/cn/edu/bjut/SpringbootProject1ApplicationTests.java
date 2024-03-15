@@ -13,4 +13,8 @@ class SpringbootProject1ApplicationTests {
         System.out.println("hello world");
     }
 
+    @Test
+    void test(){
+        System.out.println("1");
+    }
 }
