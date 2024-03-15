@@ -25,4 +25,6 @@ public interface StudentService {
      * @param student
      */
     void add(Student student);
+
+    public Student login(Student student);
 }
