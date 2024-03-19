@@ -5,6 +5,7 @@ import cn.edu.bjut.mapper.StudentMapper;
 import cn.edu.bjut.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -17,15 +18,17 @@ public class StudentServiceImpl implements StudentService {
         return null;
     }
 
-    public void delete(Integer id) {
+
+    @Transactional(rollbackFor = Exception.class) // rollbackFor = Exception.class表面回滚所有类型的异常
+    public void delete(Integer id) {              // 而 @Transactional回滚RuntimeException类型的异常
     }
 
     public void add(Student student) {
 
     }
 
-    public Student login(Student student){
-        return studentMapper.login(student);
+    public Student login(String username, String password) {
+        return studentMapper.login(username, password);
     }
 
 }

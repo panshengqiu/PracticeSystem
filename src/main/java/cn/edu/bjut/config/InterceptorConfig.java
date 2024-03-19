@@ -6,12 +6,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@Configuration
-public class WebConfig implements WebMvcConfigurer {
+@Configuration // 配置拦截器
+public class InterceptorConfig implements WebMvcConfigurer {
     @Autowired
     private LoginCheckInterceptor loginCheckInterceptor;
     @Override
-    public void addInterceptors(InterceptorRegistry registry){
-        registry.addInterceptor(loginCheckInterceptor).addPathPatterns("/**");
+    public void addInterceptors(InterceptorRegistry registry){  //添加拦截器
+        registry.addInterceptor(loginCheckInterceptor).addPathPatterns("/**").excludePathPatterns("/studentLogin");
     }
 }

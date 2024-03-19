@@ -10,6 +10,6 @@ public interface StudentMapper {
 //    @Select("select * from student where id = #{id}")
     public Student selectById(Integer id);
 
-    @Select("select * from student where username = #{student.username} and password = #{student.password}")
-    public Student login(Student student);
+    @Select("select * from student where username = #{username} and password = #{password}")
+    public Student login(String username, String password);
 }

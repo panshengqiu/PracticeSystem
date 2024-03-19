@@ -26,5 +26,5 @@ public interface StudentService {
      */
     void add(Student student);
 
-    public Student login(Student student);
+    public Student login(String username, String password);
 }
